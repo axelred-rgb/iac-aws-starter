@@ -1,0 +1,9 @@
+# .gitignore
+*.tfstate
+*.tfstate.backup
+.terraform/
+terraform.tfvars
+crash.log
+override.tf
+override.tf.json
+*.tfplan
