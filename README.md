@@ -43,3 +43,13 @@ terraform init       # Initialisation
 terraform validate   # Validation
 terraform plan       # Prévisualisation
 terraform apply      # Déploiement
+
+# Infrastructure AWS avec Terraform
+
+![Terraform](https://img.shields.io/badge/IaC-Terraform-blueviolet?logo=terraform)
+![AWS](https://img.shields.io/badge/Cloud-AWS-orange?logo=amazon-aws)
+![CI/CD](https://img.shields.io/badge/CI/CD-GitHub%20Actions-blue?logo=github-actions)
+![Maintained](https://img.shields.io/badge/Maintained-yes-green)
+![Status](https://img.shields.io/badge/Status-active-brightgreen)
+
+Projet Infrastructure as Code (IaC) déployant une stack AWS via Terraform.
