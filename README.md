@@ -1,21 +1,45 @@
-# Infrastructure AWS avec Terraform
+# 🌐 Platform Project – Infrastructure AWS avec Terraform
 
-Ce projet déploie une infrastructure simple sur AWS avec :
-- 1 VPC
-- 1 Subnet public
-- 1 Internet Gateway
-- 1 Route table
-- 1 Instance EC2 Ubuntu (t3.micro)
-- NGINX installé automatiquement
+Ce projet constitue une base modulaire pour déployer une infrastructure Cloud sur AWS avec **Terraform**, évolutive vers une véritable **plateforme Cloud & DevOps**.
 
-## Fichiers Terraform
+---
 
-- `main.tf` : ressources principales (VPC, EC2, NGINX)
+## 🚀 Objectifs
+
+- Construire une infrastructure cloud sécurisée et scalable
+- Déployer automatiquement des services (web, bases de données, monitoring)
+- Intégrer les bonnes pratiques DevOps (CI/CD, monitoring, sécurité)
+- Utiliser des outils modernes : Terraform, Docker, GitHub Actions, Prometheus, etc.
+
+---
+
+## 🔧 Infrastructure actuelle (v1)
+
+Déploiement simple avec :
+
+- ✅ 1 VPC personnalisé
+- ✅ 1 sous-réseau public
+- ✅ 1 Internet Gateway
+- ✅ 1 table de routage
+- ✅ 1 instance EC2 Ubuntu (`t3.micro`)
+- ✅ Installation automatique de **NGINX**
+
+---
+
+## 🗂️ Fichiers Terraform
+
 - `provider.tf` : configuration AWS (région `eu-south-1`)
-- `output.tf` : affichage de l’IP publique
+- `main.tf` : ressources principales (VPC, Subnet, EC2, NGINX)
+- `output.tf` : affichage IP publique
+- `variables.tf` : variables réutilisables (à venir)
+- `modules/` : dossier pour structurer en modules réutilisables (à venir)
 
-## Instructions
+---
+
+## ⚙️ Instructions de déploiement
 
 ```bash
-terraform init
-terraform apply
+terraform init       # Initialisation
+terraform validate   # Validation
+terraform plan       # Prévisualisation
+terraform apply      # Déploiement
